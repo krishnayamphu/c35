@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 struct Person{
 char name[20];
 int age;
@@ -7,7 +8,7 @@ FILE *f;
 void createPerson(){
     struct Person p;
     char next='y';
-    f=fopen("hr_list.txt","w");
+    f=fopen("hr_list.txt","a+");
     while(next=='Y'|| next=='y'){
         printf("Your name:");
         scanf("%s",&p.name);
