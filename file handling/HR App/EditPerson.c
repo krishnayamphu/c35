@@ -1,13 +1,4 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-typedef struct{
-char name[20];
-int age;
-}Person;
-FILE *f,*fp;
-
-void updatePerson(){
+void editPerson(){
     Person p;
     int count=0;
     int status;
@@ -55,9 +46,3 @@ void updatePerson(){
         printf("\n\nError in while updating data.");
     }
 }
-
-int main(){
-    updatePerson();
-return 0;
-}
-
